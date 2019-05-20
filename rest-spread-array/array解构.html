@@ -1,0 +1,62 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>array</title>
+</head>
+<body>
+    <script>
+        const lists = [
+            {name: '李雷'},
+            {age: 32},
+            [{school: 'ecut'}]
+        ];
+        // 我叫李雷我有32
+        // es5
+        var nameObj = lists[0];
+        var ageObj = lists[1];
+
+        // es6
+        const [a, b] = lists; // 数组 解构
+
+        // e === undefined
+        const  [, ,c ,e] = lists; // 可以用“，”来代替上面不想解构的对象
+
+        const  [, , f] = lists;
+    </script>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>array</title>
+</head>
+<body>
+    <script>
+        const lists = [
+            {name: '李雷'},
+            {age: 32},
+            [{school: 'ecut'}]
+        ];
+        // 我叫李雷我有32
+        // es5
+        var nameObj = lists[0];
+        var ageObj = lists[1];
+
+        // es6
+        const [a, b] = lists; // 数组 解构
+
+        // e === undefined
+        const  [, ,c ,e] = lists; // 可以用“，”来代替上面不想解构的对象
+
+        const  [, , f] = lists;
+    </script>
+</body>
+>>>>>>> b1290998600ba17f13ae4a11504b2e581e126533
+</html>

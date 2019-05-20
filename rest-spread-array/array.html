@@ -1,0 +1,54 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>array </title>
+</head>
+<body>
+    <script>
+        const arr = [17, 18, 30, 45];
+        // find: 返回的第一个 没满足条件时返回 undefined
+        const this_age = arr.find(function (age) {
+            return age > 18;
+        })
+        // filter: 满足条件的所有项都返回 没满足条件时返回一个空数组
+        const this_ages = arr.filter(function (age) {
+            return age > 99;
+        })
+        //  every: 满足每一项的要求才能返回 true
+        const this_every = arr.every(age => age >= 18 );
+        // some: 只要满足一个要求就能返回 true
+        const this_some = arr.some(age => age < 18 );
+    </script>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>array </title>
+</head>
+<body>
+    <script>
+        const arr = [17, 18, 30, 45];
+        // find: 返回的第一个 没满足条件时返回 undefined
+        const this_age = arr.find(function (age) {
+            return age > 18;
+        })
+        // filter: 满足条件的所有项都返回 没满足条件时返回一个空数组
+        const this_ages = arr.filter(function (age) {
+            return age > 99;
+        })
+        //  every: 满足每一项的要求才能返回 true
+        const this_every = arr.every(age => age >= 18 );
+        // some: 只要满足一个要求就能返回 true
+        const this_some = arr.some(age => age < 18 );
+    </script>
+</body>
+>>>>>>> b1290998600ba17f13ae4a11504b2e581e126533
+</html>

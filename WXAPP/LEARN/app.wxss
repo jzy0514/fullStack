@@ -1,0 +1,10 @@
+/**app.wxss**/
+.container {
+  width: 100%;
+  height: 100%;
+<<<<<<< HEAD
+=======
+  padding: 15rpx;
+>>>>>>> b1290998600ba17f13ae4a11504b2e581e126533
+  box-sizing: border-box;
+} 

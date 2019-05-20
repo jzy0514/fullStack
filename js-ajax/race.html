@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var xhr = null
+        if (window.XMLHttpRequest) {
+            xhr = new XMLHttpRequest()
+        } else {
+            xhr = new ActiveXobject("Microsoft.XMLHttp")
+        }
+        xhr.open('get', 'mock.json', true)
+        xhr.setRequestHeader("Content-type", "application/x-www-from-unrlencoded")
+        xhr.send()
+        // console.log(xhr.responseText)
+        // console.log(xhr.readyState, xhr.status)
+        // 4 200   
+        // 0: 请求未初始化
+        // 1: 服务器连接已建立
+        // 2: 请求已接收
+        // 3: 请求处理中
+        // 4: 请求已完成，且响应已就绪返回
+        // 200代表该次请求成功 404代表未找到页面
+        var p = new Promise((resolve, reject) => {
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    console.log(xhr.responseText)
+                    resolve(xhr.responseText)
+                }
+            }
+        })
+        function xq() {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    console.log("猛哥要相亲了")
+                    resolve('相亲很顺利')
+                }, 1000)
+            })
+        }
+        function marry() {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    console.log('猛哥结婚了!')
+                    resolve('是的')
+                }, 500)
+            })
+        }
+        function child() {
+            console.log('猛哥结婚了!')
+        }
+        // p
+        //     .then(xq)
+        //     .then(marry)
+        //     .then(child)
+        //     .catch(() => {
+        //         console.log('出家了')
+        //     })
+        Promise.race([p, xq(), marry()])
+            .then((value) => {
+                console.log(value, '------------');
+            })
+    </script>
+</body>
+
+</html>

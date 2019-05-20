@@ -1,0 +1,54 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+<<<<<<< HEAD
+		"urlCheck": false,
+=======
+		"urlCheck": true,
+>>>>>>> b1290998600ba17f13ae4a11504b2e581e126533
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.6.5",
+<<<<<<< HEAD
+	"appid": "wxb4f81593a94bd872",
+	"projectname": "wxappLearn",
+=======
+	"appid": "wx94b0528c9a511d59",
+	"projectname": "wxapp-learn",
+>>>>>>> b1290998600ba17f13ae4a11504b2e581e126533
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+<<<<<<< HEAD
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+=======
+>>>>>>> b1290998600ba17f13ae4a11504b2e581e126533
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": []
+		}
+	}
+}

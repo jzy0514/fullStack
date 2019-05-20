@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    /* height: 100%; */
+    font-size: 20px;
+    background-color: #eaeff3;
+}
+ul li{
+    list-style: none;
+}
+.page{
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.page-hd{
+    width: 100%;
+    /* border: 1px solid #f5fafe; */
+    border-radius: 5px;
+    background-color: #fff;
+}
+.page-hd_pic{
+    width: 100%;
+    height: 200px;
+    background: url(./timg.jpg) no-repeat;
+    background-size: cover;
+}
+.page-hd_userinfo{
+    padding: 10 10 13 10;
+    position: relative;
+}
+.name{
+    line-height: 1;
+    color: black;
+    /* margin-left: 10px; */
+    margin-top: 5px;
+    padding: 0 15px;
+    font-size: 18px;
+}
+.sex{
+    content: "";
+    width: 22px;
+    height: 22px;
+    background: url(./nv.png) no-repeat;
+    background-size: 80% 80%;
+    position: absolute;
+    left: 70px;
+    top: 0;
+}
+.labels{
+    margin-top: 10px;
+    padding: 0 15px;
+}
+.label{
+    padding: 5px 10px;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.blue{
+    background-color: #48A6FD;
+}
+.green{
+    background-color: #1DCA42;
+}
+.orange{
+    background-color: #FB8800;
+}
+.page-hd_msg{
+    margin-top: 10px;
+    padding: 0 15px;
+}
+.item{
+    width: 95px;
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    color: #b8b8b8;
+}
+.city::before{
+    content: "";
+    width: 22px;
+    height: 25px;
+    background: url(./12/location.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.job::before{
+    content: "";
+    width: 22px;
+    height: 25px;
+    background: url(./12/zhiye.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.like::before{
+    content: "";
+    width: 22px;
+    height: 25px;
+    background: url(./12/aixin.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.wechat::before{
+    content: "";
+    width: 22px;
+    height: 25px;
+    background: url(./12/weixin.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.phone::before{
+    content: "";
+    width: 22px;
+    height: 25px;
+    background: url(./12/phone.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.ewm{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 32px;
+    right: 11px;
+}
+.ewm img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.hongbao{
+    width: 55px;
+    height: 50px;
+    position: absolute;
+    right: 4px;
+    bottom: 0;
+}
+.hongbao img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.page-bd{
+    margin-top: 10px;
+    width: 100%;
+    border: 1px solid #f5fafe;
+    border-radius: 5px;
+    background-color: #fff;
+    height: 50px;
+}
+.page-bd__items{
+    display: -webkit-flex;
+    display: flex;
+    /* padding: 15px; */
+    width: 100%;
+    height: 50px;
+    line-height:35px;
+}
+.weui-flex__item{
+    width: 35px;
+    height: 35px;
+    position:relative;
+    top: 7px;
+    left: 10px;
+    margin-left: 5px;
+}
+.pica{
+    background: url(./IMG_3154.JPG);
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    border-radius: 50px;
+}
+.picb{
+    background: url(./IMG_3155.JPG);
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    border-radius: 50px;
+}
+.picc{
+    background: url(./IMG_3156.JPG);
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    border-radius: 50px;
+}
+.weui-flex__item1{
+    font-size: 15px;
+    /* width: 100%; */
+    height: 35px;
+    position:relative;
+    top: 7px;
+    left: 10px;
+    margin-left: 38px;
+}
+.weui-flex__item1::before{
+    content: "";
+    width: 22px;
+    height: 22px;
+    background: url(./youjiantou.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 188px;
+    top: 8px;
+}
+.page-bd__two{
+    margin-top: 10px;
+    border: 1px solid #f5fafe;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 15px 0;
+    box-sizing: border-box;
+}
+h3{
+    /* line-height: 13px; */
+    border-left: 5px solid #48a6fd; 
+    padding:0 15px ;
+    color: #333333;
+}
+p{
+    line-height: 20px; 
+    font-size: 15px; 
+    padding: 0 15px;
+    color: #333333;
+}
+h4{
+    /* line-height: 13px; */
+    border-left: 5px solid #1dca42; 
+    padding:0 15px ;
+    color: #333333;
+}
+.page-bd__ggzh{
+    height: 90;
+    margin-top: 10px;
+    border: 1px solid #f5fafe;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 15px 0;
+    box-sizing: border-box;
+    text-align: center;
+    background: url('./taile.jpg');
+    background-size: contain;
+    color: #fbfdf4;
+}
+.page-bd__grzp{
+    height:  161px;
+    margin-top: 10px;
+    border: 1px solid #f5fafe;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 15px 0;
+}
+h5{
+    /* line-height: 13px; */
+    border-left: 5px solid red; 
+    padding:0 15px ;
+    color: #333333;
+}
+.page-bd__items1{
+    display: -webkit-flex;
+    display: flex;
+    /* justify-content: space-around; */
+    /* padding: 15px; */
+    width: 100%;
+    height: 132px;
+    line-height:35px;
+}
+.weui-flex__item2{
+    width: 101px;
+    height: 101px;
+    position:relative;
+    top: 7px;
+    left: 10px;
+    margin-left: 15px;
+    padding: 15px 0;
+}
+.pic1{
+    background: url('./taile.jpg');
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+}
+.pic2{
+    background: url('./taile.jpg');
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+}
+.pic3{
+    background: url('./taile.jpg');
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+}
+.page-ft__btns{
+    display: -webkit-flex;
+    display: flex;
+    /* justify-content: space-around; */
+    /* padding: 15px; */
+    width: 100%;
+    line-height:35px;
+    border-bottom: 0;
+    
+}
+.page-ft__btn{
+    width: 50%;
+    height: 49px;
+    position:relative;
+    top: 7px;
+    left: -15px;
+    margin:15px 15px;
+    /* padding: 15px 0; */
+    text-align: center;
+}
+.BJ{
+    border: 1px solid #f5fafe;
+    border-radius: 50px;
+    background-color: #fff;
+    line-height: 50px;
+}
+.FX{
+    border: 1px solid #f5fafe;
+    border-radius: 50px;
+    background-color: #48a6fd;
+    line-height: 50px;
+    color: #fff;
+}
+.BJ::after{
+    content: "";
+    width: 22px;
+    height: 22px;
+    background: url(./bianji.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 32px;
+    top: 15px;
+}

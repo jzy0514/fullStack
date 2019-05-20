@@ -1,0 +1,6 @@
+<countdown id="sendRandom"
+    start="{{start}}"
+    bind:getCountdownEvent="_getCountdowEvent"
+    bind:setStarDataEvent="_setStarDataEvent"
+>
+</countdown>

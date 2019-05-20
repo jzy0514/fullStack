@@ -1,0 +1,20 @@
+<<<<<<< HEAD
+/* pages/profile/index.wxss */
+Page {
+    background-color: #f8f8f8;
+    line-height: 1.6;
+}
+.section {
+    padding: 0 15px;
+    margin-top: 10px;
+=======
+/* pages/profile/index.wxss */
+Page {
+    background-color: #f8f8f8;
+    line-height: 1.6;
+}
+.section {
+    padding: 0 15px;
+    margin-top: 10px;
+>>>>>>> b1290998600ba17f13ae4a11504b2e581e126533
+}

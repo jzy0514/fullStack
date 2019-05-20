@@ -1,0 +1,8 @@
+<!--pages/categories/categories.wxml-->
+<view class="section">
+    <scroll-view scroll-y="{{false}}" class="categories-left">
+        <view class="cate-list" wx:for="{{cate-list}}" wx:key="{{item.id}}" bindtap="cateLeft">
+            <text calss="cate-name" >{{item.name}}</text>
+        </view>
+    </scroll-view>
+</view>

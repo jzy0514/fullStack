@@ -1,0 +1,22 @@
+<<<<<<< HEAD
+<view class="container legend-list">
+    <block wx:for="{{legends}}">
+        <view class="image-section">
+            <image style="width:80px;height:80px;background-color:#eeeeee" mode="aspectFill" src="{{item.src}}" />
+        </view>
+        <text>
+            {{item.name}} {{item.title}}
+        </text>
+    </block>
+=======
+<view class="container legend-list">
+    <block wx:for="{{legends}}">
+        <view class="image-section">
+            <image style="width:80px;height:80px;background-color:#eeeeee" mode="aspectFill" src="{{item.src}}" />
+        </view>
+        <text>
+            {{item.name}} {{item.title}}
+        </text>
+    </block>
+>>>>>>> b1290998600ba17f13ae4a11504b2e581e126533
+</view>
