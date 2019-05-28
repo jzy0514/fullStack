@@ -5,4 +5,10 @@
             <text calss="cate-name" >{{item.name}}</text>
         </view>
     </scroll-view>
+    <scroll-view scroll-y="{{false}}" class="categories-right">
+        <view class="banner" wx:for="{{banner}}" wx:key="{{index}}">{{ banner }}</view>
+        <view class="cateName" wx:for="{{cate-name}}" wx:key="{{item.id}}">
+            <text class></text>
+        </view>
+    </scroll-view>
 </view>
