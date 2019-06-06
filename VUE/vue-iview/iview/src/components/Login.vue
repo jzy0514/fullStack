@@ -56,20 +56,20 @@ export default {
     handleSubmit (name) {
       this.$refs[name].validate(valid => {
         sessionStorage.setItem('user', JSON.stringify(this.formLogin.username))
+        if (valid) {
+          this.$Message.success('提交成功')
+          this.$router.push({path: '/table'})
+        } else {
+          this.$Message.error('验证失败')
+        }
+        if (this.formLogin.remember) {
+          sessionStorage.setItem('username', JSON.stringify(this.formLogin.username))
+          sessionStorage.setItem('password', JSON.stringify(this.formLogin.password))
+        } else {
+          sessionStorage.removeItem('username')
+          sessionStorage.removeItem('password')
+        }
       })
-      if (valid) {
-        this.$Message.success('提交成功')
-        this.$router.push({path: '/table'})
-      } else {
-        this.$Message.error('验证失败')
-      }
-      if (this.formLogin.remember) {
-        sessionStorage.setItem('username', JSON.stringify(this.formLogin.username))
-        sessionStorage.setItem('password', JSON.stringify(this.formLogin.password))
-      } else {
-        sessionStorage.removeItem('username')
-        sessionStorage.removeItem('password')
-      }
     }
   }
 }
