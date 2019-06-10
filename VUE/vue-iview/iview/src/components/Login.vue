@@ -19,12 +19,12 @@
       </FormItem>
       <FormItem>
         <Row>
-          <Col :xs="{ span:4, offset: 6 }">
+          <i-col :xs="{ span:4, offset: 6 }">
             <Button type="primary" @click="handleSubmit('formLogin')">登录</Button>
-          </Col>
-          <Col :xs="{ span:4, offset: 6 }">
+          </i-col>
+          <i-col :xs="{ span:4, offset: 6 }">
             <Button type="primary" @click="formLoginReset">重置</Button>
-          </Col>
+          </i-col>
         </Row>
       </FormItem>
     </i-Form>

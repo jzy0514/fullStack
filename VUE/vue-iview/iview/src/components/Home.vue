@@ -1,53 +1,49 @@
 <template>
   <div class="home">
     <div class="layout">
-      <Row type='flex'>
-        <Col :span="spanLeft" class="layout-menu-left">
+      <Row type="flex">
+        <i-col :span="spanLeft" class="layout-menu-left">
           <div class="layout-logo-left">
             <span class="layout-text">Admin 管理系统</span>
           </div>
-          <Menu theme="dark">
+          <Menu theme="dark" mode="vertical" width="auto">
             <Submenu name="1">
-                <template slot="title">
-                    <Icon type="ios-home" />
-                    导航一
-                </template>
-                <MenuItem name="1-1">文章管理</MenuItem>
-                <MenuItem name="1-2">评论管理</MenuItem>
-                <MenuItem name="1-3">举报管理</MenuItem>
+              <template slot="title">
+                <Icon type="ios-home"/>导航一
+              </template>
+              <MenuItem name="1-1">文章管理</MenuItem>
+              <MenuItem name="1-2">评论管理</MenuItem>
+              <MenuItem name="1-3">举报管理</MenuItem>
             </Submenu>
             <Submenu name="2">
-                <template slot="title">
-                    <Icon type="md-paw" />
-                    导航二
-                </template>
-                <MenuItem name="2-1">新增用户</MenuItem>
-                <MenuItem name="2-2">活跃用户</MenuItem>
+              <template slot="title">
+                <Icon type="md-paw"/>导航二
+              </template>
+              <MenuItem name="2-1">新增用户</MenuItem>
+              <MenuItem name="2-2">活跃用户</MenuItem>
             </Submenu>
             <Submenu name="3">
-                <template slot="title">
-                    <Icon type="md-paw" />
-                    导航三
-                </template>
+              <template slot="title">
+                <Icon type="md-paw"/>导航三
+              </template>
             </Submenu>
             <Submenu name="4">
-                <template slot="title">
-                    <Icon type="md-stats" />
-                    charts
-                </template>
-                <MenuGroup title="使用">
-                    <MenuItem name="3-1">新增和启动</MenuItem>
-                    <MenuItem name="3-2">活跃分析</MenuItem>
-                    <MenuItem name="3-3">时段分析</MenuItem>
-                </MenuGroup>
-                <MenuGroup title="留存">
-                    <MenuItem name="3-4">用户留存</MenuItem>
-                    <MenuItem name="3-5">流失用户</MenuItem>
-                </MenuGroup>
+              <template slot="title">
+                <Icon type="md-stats"/>charts
+              </template>
+              <MenuGroup title="使用">
+                <MenuItem name="3-1">新增和启动</MenuItem>
+                <MenuItem name="3-2">活跃分析</MenuItem>
+                <MenuItem name="3-3">时段分析</MenuItem>
+              </MenuGroup>
+              <MenuGroup title="留存">
+                <MenuItem name="3-4">用户留存</MenuItem>
+                <MenuItem name="3-5">流失用户</MenuItem>
+              </MenuGroup>
             </Submenu>
           </Menu>
-        </COl>
-        <Col :span="spanRight">
+        </i-col>
+        <i-col :span="spanRight">
           <div class="layout-header">
             <Button type="text">
               <Icon type="md-menu" size="32"/>
@@ -63,17 +59,26 @@
                   <DropdownItem>退出</DropdownItem>
                 </DropdownMenu>
               </Dropdown>
-              <img :src="imgUrl" width="100%"> 
+              <img :src="imgUrl" width="100%" class="uersinfo-photo">
             </div>
           </div>
-        </Col>
+          <Breadcrumb>
+            <BreadcrumbItem to="/table">首页</BreadcrumbItem>
+            <BreadcrumbItem to="/table/manage">components</BreadcrumbItem>
+          </Breadcrumb>
+          <div class="layout-content">
+            <div class="layout-content-main">
+              <router-view></router-view>
+            </div>
+          </div>
+        </i-col>
       </Row>
     </div>
   </div>
 </template>
 
 <script>
-import BG from '../assets/bg.jpg'
+import BG from "../assets/IMG_3259.jpg"
 export default {
   name: 'Home',
   data () {
@@ -84,43 +89,49 @@ export default {
     }
   },
   created () {
-    this.username =  JSON.parse(sessionStorage.getItem('username'))
+    this.username = JSON.parse(sessionStorage.getItem('username'))
   }
 }
 </script>
 
 <style scoped>
-.home, .layout{
+.home,
+.layout {
   width: 100%;
   height: 100%;
 }
 .ivu-row-flex {
   height: 100%;
 }
-.layout-menu-left{
+.layout-menu-left {
   background: #515a6e;
 }
-.layout-logo-left{
+.layout-logo-left {
   width: 100%;
   height: 10%;
   position: relative;
 }
-.userinfo{
+.userinfo {
   float: right;
-  margin: 5px 15px;
+  margin: 0 15px;
 }
-.ivu-col-span-19{
+.ivu-col-span-19 {
   background-color: #eee;
 }
-.layout-header{
+.layout-header {
   background-color: #fff;
-  padding: 10px 0;  
+  padding: 10px 0;
 }
-.layout-text{
+.layout-text {
   position: absolute;
   font-size: 30px;
   text-align: center;
   left: 10%;
   top: 25%;
+}
+.uersinfo-photo {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
 }
 </style>
