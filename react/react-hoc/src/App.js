@@ -2,7 +2,7 @@ import React from 'react';
 // import logo from './logo.svg';
 import LoginStatus from './LoginStatus';
 import ShopCart from './ShopCart';
-import WithLogin from './WithLogin';
+// import WithLogin from './WithLogin';
 import './App.css';
 
 // const WithLoginStatus = WithLogin(LoginStatus); // 包装登录组件
