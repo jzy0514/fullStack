@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "斗鱼直播",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#FF8000",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./images/shouye.png",
+        "selectedIconPath": "./images/shouye.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "视频",
+        "iconPath": "./images/shipin.png",
+        "selectedIconPath": "./images/shipin.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "关注",
+        "iconPath": "./images/guanzhu.png",
+        "selectedIconPath": "./images/guanzhu.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "活动",
+        "iconPath": "./images/huodong.png",
+        "selectedIconPath": "./images/huodong.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "./images/wode.png",
+        "selectedIconPath": "./images/wode.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
