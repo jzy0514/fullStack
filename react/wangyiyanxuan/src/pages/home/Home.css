@@ -1,0 +1,26 @@
+.Top {
+  background-color: #fff;
+}
+.log { 
+  padding: 5px;
+}
+.logtext {
+  color: #2a2a2a;
+  padding: 0 15px;
+}
+.TopSearch { 
+  padding: 5px;
+}
+.loginbtn {
+  padding-left: 0;
+  border-radius: 25%;
+  box-sizing: border-box;
+  margin: 8px 8px;
+  text-align: center;
+  border: 1px solid red;
+  line-height: 24px;
+  color: red;
+}
+.menu {
+  display: inline-block;
+}
