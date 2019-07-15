@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Input, Row, Col, Icon } from 'antd';
+import { Input, Row, Col, Icon, Carousel } from 'antd';
 import './Home.css';
 import 'antd/dist/antd.css';
 
