@@ -4,6 +4,14 @@
 }
 .Top {
   background-color: #fff;
+  position: relative;
+  height: 80px;
+  width: 100%;
+  z-index: 999;
+}
+.Top-active{
+  position: fixed;
+  top: 0;
 }
 .log { 
   padding: 5px;

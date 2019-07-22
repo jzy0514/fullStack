@@ -5,6 +5,7 @@ import 'antd/dist/antd.css';
 
 const { Search } = Input;
 class Header extends Component {
+  
   render() {
     return (
       <div>
