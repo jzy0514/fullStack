@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
-import Carousel from "../../components/Carousel/Carousel.jsx";
+import Header from '../header/Header';
+import Carousel from "../../Carousel/Carousel";
 import './Home.css';
 
 class Home extends Component {
   render() {
     return (
       <div>
+        <div className="header">
+          <Header />
+        </div>
         <div className="home">
           <Carousel />
           <div className="message">

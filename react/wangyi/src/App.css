@@ -1,0 +1,29 @@
+.app {
+  width: 100%;
+  color: #ffffff;
+}
+.app-home {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 52px;
+  width: 100%;
+}
+.app-footer{
+  bottom: 0;
+}
+.footer-tab {
+  display: flex;
+  height: 30px;
+  line-height: 30px;
+  color: #DDDDDD;
+  text-align: center;
+}
+.tab-item {
+  flex: 1
+}
+.nav-link{
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
