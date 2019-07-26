@@ -90,9 +90,9 @@ class Home extends Component {
               </div>
             </div>
           </div>
-          <div className="out"></div>
-          <div className="hot"></div>
-          <div className="good"></div>
+          <div className="out">aaaaaaaaaaaa</div>
+          <div className="hot">aaaaaaaaaaaaaa </div>
+          <div className="good">aaaaaaaaaaaaa</div>
           <div className="time"></div>
           <div className="new-good"></div>
         </div>

@@ -2,54 +2,6 @@
   margin: 0;
   padding: 0;
 }
-/* .Top {
-  background-color: #fff;
-}
-.log { 
-  padding: 5px;
-} */
-/* .logtext {
-  color: #2a2a2a;
-  padding: 0 15px;
-}
-.TopSearch { 
-  padding: 5px;
-}
-.loginbtn {
-  border-radius: 25%;
-  box-sizing: border-box;
-  margin: 8px 8px;
-  text-align: center;
-  border: 1px solid red;
-  line-height: 24px;
-  color: red;
-}
-.list {
-  height: 45px;
-  width: 100%;
-} */
-/* .menu {
-  height: 40px;
-  width: 320px;
-  overflow: scroll;
-  white-space: nowrap;
-  font-size: 15px;
-  padding: 5px 0;
-  margin-left: 13px;
-  display: inline-block;
-} */
-/* .text {
-  width: 80px;
-  text-align: center;
-  display: inline-block;
-} */
-/* .more-menu {
-  width: 55px;
-  float: right;
-  text-align: center;
-  position: relative;
-  top: 5px;
-} */
 .home {
   position: fixed;
   top: 88px;
