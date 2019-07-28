@@ -2,11 +2,20 @@
   margin: 0;
   padding: 0;
 }
-.home {
+html body {
+  width: 100%;
+  max-height: 9999px;
+}
+.header {
   position: fixed;
-  top: 88px;
+  top: 0;
   left: 0;
-  bottom: 52px;
+  z-index: 999;
+}
+.home {
+  max-height: 9999px;
+  position: absolute;
+  top: 80px;
   width: 100%;
 }
 .message {
@@ -139,4 +148,76 @@ img{
   position: relative;
   top: -45px;
   right: -65px;
+}
+.out {
+  width: 100%;
+  border-top: 10px solid #ededed;
+}
+.out-title {
+  height: 45px;
+  line-height: 45px;
+  margin-bottom: 0;
+  text-align: center;
+}
+.out-left {
+  float: left;
+  margin-left: 15px;
+  color: #000;
+  font-size: 14px;
+}
+.out-right {
+  float: right;
+  margin-right: 35px;
+  color: #000;
+}
+.out-title .icon {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  position: relative;
+  background-image: url(../../../imges/more.png);
+  background-size: cover;
+  left: 150px;
+  top: 2px;
+}
+.out-list {
+  margin: 0 9px;
+}
+.out-list1 {
+  display: inline-block;
+  width: 172px;
+  height: 130px;
+  margin: 3px 3px;
+}
+.out-list .list1 {
+  background-image: url(http://yanxuan.nosdn.127.net/74e2ea8f81004d0a60f90fc8e4649058.png?imageView&thumbnail=343y260&enlarge=1);
+  background-size: 101% 100%;
+}
+.out-list .list2 {
+  background-image: url(http://yanxuan.nosdn.127.net/c097be14110f769d58245cdad73e15c3.png?imageView&thumbnail=343y260&enlarge=1);
+  background-size: 101% 100%;
+}
+.out-list .list3 {
+  background-image: url(http://yanxuan.nosdn.127.net/66a23d776f41cba70d00803a5231124b.png?imageView&amp;thumbnail=343y260&amp;enlarge=1);
+  background-size: 101% 100%;
+}
+.out-list .list4 {
+  background-image: url(http://yanxuan.nosdn.127.net/3bf5a8a2f6eef284ecb40806ae9ce043.png?imageView&amp;thumbnail=343y260&amp;enlarge=1);
+  background-size: 101% 100%;
+}
+.out-list .text {
+  width: 100%;
+  margin: 5px auto;
+  font-size: 12px;
+  color: #a1a1a1;
+}
+.out-list .text1 {
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #000;
+}
+.hot {
+  border-top: 10px solid #ededed;
+  width: 100%;
 }

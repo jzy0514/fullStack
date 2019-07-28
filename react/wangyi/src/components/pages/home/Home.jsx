@@ -90,7 +90,44 @@ class Home extends Component {
               </div>
             </div>
           </div>
-          <div className="out">aaaaaaaaaaaa</div>
+          <div className="out">
+            <div className="out-title">
+              <span className="out-left">品牌制造商</span>
+              <a href="http://m.you.163.com/manufacturer/list">
+                <span className="out-right">更多</span>
+                <div className="icon">
+                </div>
+              </a>
+            </div>
+            <div className="out-list">
+              <ul>
+                <a className="out-list1 list1" href="http://m.you.163.com/item/manufacturer?tagId=1080000&page=1&size=100">
+                  <div className="text">
+                    <span className="text1">海外制造商</span>
+                    <span>9.9元起</span>
+                  </div>
+                </a>
+                <a className="out-list1 list2" href="http://m.you.163.com/item/manufacturer?tagId=1026000&page=1&size=100">
+                  <div className="text">
+                    <span className="text1">CK制造商</span>
+                    <span>29.9元起</span>
+                  </div>
+                </a>
+                <a className="out-list1 list3" href="http://m.you.163.com/item/manufacturer?tagId=1001037&page=1&size=100">
+                  <div className="text">
+                    <span className="text1">新秀丽制造商</span>
+                    <span>169元起</span>
+                  </div>
+                </a>
+                <a className="out-list1 list4" href="http://m.you.163.com/item/manufacturer?tagId=1038001&page=1&size=100">
+                  <div className="text">
+                    <span className="text1">Nine West制造商</span>
+                    <span>219元起</span>
+                  </div>
+                </a>
+              </ul>
+            </div>
+          </div>
           <div className="hot">aaaaaaaaaaaaaa </div>
           <div className="good">aaaaaaaaaaaaa</div>
           <div className="time"></div>
