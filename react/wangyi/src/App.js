@@ -3,7 +3,6 @@ import {
   BrowserRouter as Router, Route, Switch,
   Redirect, NavLink
 } from 'react-router-dom';
-import Header from './components/pages/header/Header';
 import Home from './components/pages/home/Home';
 import Kinds from './components/kinds/kind';
 import Cart from './components/cart/cart';

@@ -11,7 +11,7 @@ html body {
 }
 .app-footer{
   width: 100%;
-  height: 42px;
+  height: 43px;
   float: left;
   position: fixed;
   bottom: 0;
@@ -26,9 +26,13 @@ html body {
   text-align: center;
 }
 .tab-item {
-  flex: 1
+  flex: 1;
+  width: 100%;
+  height: 100%;
 }
 .nav-link{
+  width: 100%;
+  height: 100%;
   display: block;
   color: black;
   text-decoration: none;
