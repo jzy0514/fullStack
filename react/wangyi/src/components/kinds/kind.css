@@ -1,16 +1,10 @@
 ul {
   padding-bottom: 20px;
 }
-.text {
+.kinds-text {
   margin-top: 20px;
   width: 88px;
 }
-li a {
-  display: block;
-  width: 88px;
-  color: black;
-  font-size: 16px;
-}
-.text:active {
+.kinds-text:active {
   border-right: 1px solid #ab2b2b;
 }
