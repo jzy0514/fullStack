@@ -100,3 +100,19 @@ new的实现原理：
 
   sessionStorage:仅在当前浏览器窗口关闭前有效，不能长久保存
   localStorage:在所以的同源窗口都是共享的 存储大小为5M左右
+
+# q20 任务列表(event loop)
+  marcotask(宏观任务):
+    SetTimeout
+    SetInterval
+    requestAnimationFrame
+    HTML的解析
+    js的主线程
+    页面加载
+    用户交互
+  mircotask(微观任务):
+    promise
+    mutation.oberver
+    process.nextTick
+
+  script(主程序代码) ----> process.nextTick ---> promise ----> setTimeout ---> setInterval ---> setImmediate ---> I/O ---> UI rendeing
