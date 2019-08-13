@@ -1,6 +1,6 @@
-# douban-movie
+# y
 
-> A Vue.js project
+> y
 
 ## Build Setup
 

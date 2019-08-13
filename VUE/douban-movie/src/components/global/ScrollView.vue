@@ -1,5 +1,5 @@
 <template>
-  <div class="scroll-wrapper" ref="wrapper">
+  <div class="scroll-wrapper">
     <div>
       <slot></slot>
     </div>
@@ -20,16 +20,16 @@ export default {
     }
   },
   watch: {
-    data (newVal, oldVal) {
+    data(newVal, oldVal) {
       setTimeout(() => {
         this.forceUpdate()
       }, 20)
     }
   },
-  mounted () {
+  mounted() {
     setTimeout(() => {
       this.initScroll()
-    },20)
+    }, 20)
   },
   methods: {
     initScroll() {
@@ -37,11 +37,13 @@ export default {
         return
       }
       this.scroll = new BScroll(this.$refs.wrapper, {
+        // 修改点击事件，使滚动页面内容可被点击
         click: true,
         bounce: false,
-        pullUpLoad: this.pullUpLoad
+        pullUpload: this.pullUpload
       })
-      if (this.pullUpLoad) {
+      if (this.pullUpload) {
+        // 上拉加载更多
         this.initPullUpLoad()
       }
     },
@@ -63,8 +65,6 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
-.scroll-wrapper
-  height 100%
-  overflow hidden
+<style>
+
 </style>

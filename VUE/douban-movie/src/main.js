@@ -3,14 +3,15 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import VueLazyload from 'vue-lazyload'
 import globalComponents from './common/js/components'
+import VueLazyLoad from 'vue-lazyload'
+
 import './common/styles/reset.styl'
 
-Vue.use(VueLazyload, {
-  loading: require('./common/images/loading.png') 
-})
 Vue.use(globalComponents)
+Vue.use(VueLazyLoad, {
+  loading: require('./common/images/loading.png')
+})
 Vue.config.productionTip = false
 /* eslint-disable no-new */
 new Vue({
