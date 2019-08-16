@@ -56,7 +56,7 @@ Page({
   showDetail(e) {
     // 标记为已经阅读过的  --->  contentId
     let item = e.target.dataset.item      // 获取数据
-    const contentId = item.contentId      // 获取数剧中的ID属性
+    const contentId = item.contentId      // 获取数据中的ID属性
     let visitedID = wx.getStorageSync('visitedID') || [];
     // 1  includes find findIndex
     if (visitedID.includes(contentId)) {
