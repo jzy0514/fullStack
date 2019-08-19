@@ -5,9 +5,14 @@
       <i class="iconfont icon-right"></i>
     </div>
     <div v-if="movies.length" class="list">
-      <div class="item" v-for="item in movies" :key="item._id" @click="$emit('select', item._id)">
+      <div 
+        class="item" 
+        v-for="item in movies" 
+        :key="item._id" 
+        @click="$emit('select', item._id)"
+      >
         <div class="image">
-          <img v-lazy="item.poster" alt="" width="100%"  height="100%">
+          <img v-lazy="item.poster" alt="" width="100%" height="100%">
           <em v-if="item.isPlay === 1" class="rate">
             {{item.rate}}
           </em>
@@ -15,7 +20,7 @@
         <p class="title">{{item.title}}</p>
       </div>
     </div>
-    <div v-else class="loading-warp">
+    <div v-else class="loading-wrap">
       <Loading />
     </div>
   </section>
@@ -23,7 +28,7 @@
 
 <script>
 export default {
-  name: 'LisatBlock',
+  name: 'ListBlock',
   props: {
     title: {
       type: String,

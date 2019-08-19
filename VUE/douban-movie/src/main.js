@@ -4,12 +4,14 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import globalComponents from './common/js/components'
-import VueLazyLoad from 'vue-lazyload'
+import VueLazyload from 'vue-lazyload'
+import store from './store'
 
 import './common/styles/reset.styl'
 
+Vue.use(store)
 Vue.use(globalComponents)
-Vue.use(VueLazyLoad, {
+Vue.use(VueLazyload, {
   loading: require('./common/images/loading.png')
 })
 Vue.config.productionTip = false
@@ -17,6 +19,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })

@@ -27,13 +27,14 @@ export default {
   name: 'TheHeader'
 }
 </script>
+
 <style lang="stylus" scoped>
 $gray = #bbbbbb
 $theme-color = #1c2635
   .header
     position fixed
     display flex
-    z-index 999
+    z-index 100
     width 100%
     height 56px
     line-height 56px

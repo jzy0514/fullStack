@@ -2,8 +2,8 @@
   <transition name="fade">
     <div class="movie">
       <div class="player-wrapper" @touchmove.prevent>
-        <!-- <d-player ref="player" :options="initPlayer" class="player"></d-player> -->
-        <video class="player" :src="movie.video"></video>
+        <!-- <div ref="player" class="player" /> -->
+        <video class="player" :src="movie.video" />
         <i class="iconfont icon-left" @click="$router.back()" />
       </div>
       <div class="info-wrapper">
@@ -50,7 +50,7 @@
           <div v-show="isShow" class="layer-wrapper">
             <div class="title" @click="toggleLayer">
               <span class="text">{{ movie.title }}</span>
-              <i class="iconfont icon-down"/>
+              <i class="iconfont icon-down" />
             </div>
             <div v-if="movie.title" class="desc">
               <div class="descript">
@@ -88,14 +88,14 @@
             </div>
           </div>
         </Transition>
+
       </div>
     </div>
   </transition>
 </template>
 
 <script>
-import axios from "axios"
-
+import axios from "axios";
 export default {
   name: "Movie",
   data() {
@@ -105,53 +105,50 @@ export default {
       isShow: false
     };
   },
-  beforeRouteUpdate(to, from, next) {
+  beforeRouteUpdate(to,from,next) {
     next()
+    this.getDetail()
   },
   created() {
-    this.getDetail();
+    this.getDetail()
   },
   computed: {
-    desc () {
-      const duration = this.movie.duration || this.movie.pubdate.replace('(中国大陆)', '')
+    desc() {
       const rate = this.movie.rate ? `${this.movie.rate}分` : '即将上映'
+      const duration = this.movie.duration || this.movie.pubdate.replace('(中国大陆)','')
       return `${rate} · ${this.movie.movieTypes.join('/')} · ${duration}`
     },
     casts() {
       const casts = this.movie.casts
-      return casts.map(it => it.name).join('/')
+      return casts.map(item => item.name).join('/')
     }
   },
   methods: {
     // 拿到电影的id去请求数据
     getDetail() {
       const { id } = this.$route.params;
-      axios
-        .get(
-          'https://www.easy-mock.com/mock/5ca495f2ea0dc52bf3b67fd7/jzy/movies'
-        )
-        .then(res => {
-          console.log(res);
-          if (res.data.code === 1001) {
-            this.movie = res.data.result.movie
-            this.relativeMovies = res.data.result.relativeMovies
-            // this.initPlayer()
-          }
-        });
+      axios.get(`/api/api/movie/get_detail/${id}`).then(res => {
+        console.log(res);
+        if (res.data.code === 1001) {
+          this.movie = res.data.result.movie;
+          this.relativeMovies = res.data.result.relativeMovies;
+          // this.initPlayer()
+        }
+      });
     },
     toggleLayer() {
-      this.isShow = !this.isShow;
+      this.isShow = !this.isShow
     },
     // initPlayer() {
-    //   const { Dplayer } = window
-    //   this.player = new Dplayer({
+    //   const {DPlayer} = window
+    //   this.player = new DPlayer({
     //     container: this.$refs.player,
     //     video: {
     //       url: this.movie.video,
     //       pic: this.movie.cover
     //     }
     //   })
-    // },
+    // }
   }
 };
 </script>
@@ -169,6 +166,7 @@ export default {
   .player-wrapper
     height 210px
     .player
+      width 100%
       height 210px
     .icon-left
       position absolute
@@ -306,4 +304,3 @@ export default {
 .fade-leave-to
   transform translateX(100%)
 </style>
-

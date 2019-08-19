@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <Header></Header>
+  <div id="app">
+    <!-- 头部 -->
+    <TheHeader />
     <div class="content">
       <keep-alive>
         <router-view/>
@@ -10,16 +11,16 @@
 </template>
 
 <script>
-import TheHeader from '@/components/TheHeader'
+import TheHeader from "@/components/TheHeader";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    'Header': TheHeader
+    TheHeader
   }
-}
+};
 </script>
 
-<style lang="stylus" scoped>
+<style lang='stylus' scoped>
 .content
   position absolute
   top 56px

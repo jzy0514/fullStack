@@ -1,8 +1,8 @@
 {
-  "name": "y",
+  "name": "douban",
   "version": "1.0.0",
-  "description": "y",
-  "author": "y",
+  "description": "A Vue.js project",
+  "author": "weicheng1997 <951039237@qq.com>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
@@ -10,17 +10,19 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "axios": "^0.19.0",
     "better-scroll": "^1.15.2",
     "dplayer": "^1.25.0",
-    "stylus-loader": "^3.0.2",
+    "good-storage": "^1.1.0",
+    "js-cookie": "^2.2.1",
     "vue": "^2.5.2",
-    "vue-dplayer": "^0.0.10",
+    "vue-dplayer": "0.0.10",
     "vue-lazyload": "^1.3.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vuex": "^3.1.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
+    "axios": "^0.19.0",
     "babel-core": "^6.22.1",
     "babel-helper-vue-jsx-merge-props": "^2.0.3",
     "babel-loader": "^7.1.1",
@@ -47,6 +49,7 @@
     "semver": "^5.3.0",
     "shelljs": "^0.7.6",
     "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
     "uglifyjs-webpack-plugin": "^1.1.1",
     "url-loader": "^0.5.8",
     "vue-loader": "^13.3.0",
