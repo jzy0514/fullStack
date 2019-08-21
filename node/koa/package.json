@@ -1,0 +1,17 @@
+{
+  "name": "koa",
+  "version": "1.0.0",
+  "description": "- SQL\r   CREATE INSERT UPDATE DELETE\r   SELECT * FROM t-user where is_delete=1\r   SELECT * FROM t-user where id=123\r   索引 \r   PRIMARY KEY autoincrement\r   UNIQUE KEY \r   数据类型\r   int(11)  varchar(30) \r   tinyint(1) detetime\r   存储类型 InnoDB Memory",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.8.1",
+    "koa-route": "^3.2.0",
+    "koa-static": "^5.0.0"
+  }
+}
