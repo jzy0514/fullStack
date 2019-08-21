@@ -1,0 +1,15 @@
+{
+  "name": "buffer",
+  "version": "1.0.0",
+  "description": "buffer 有单独的空间管理这些数据, \r   缓冲一下传输速度 这个单独区域, 就是buffer\r { [Function: Buffer]\r <!-- 8kb || 8 * 1024 = 8192 -->\r poolSize: 8192,\r <!-- 创建的方式 -->\r from: [Function: from],\r of: [Function: of],\r alloc: [Function: alloc],\r allocUnsafe: [Function: allocUnsafe],\r allocUnsafeSlow: [Function: allocUnsafeSlow],\r isBuffer: [Function: isBuffer],\r compare: [Function: compare],\r isEncoding: [Function: isEncoding],\r concat: [Function: concat],\r byteLength: [Function: byteLength],\r [Symbol(kIsEncodingSymbol)]: [Function: isEncoding] \r }",
+  "main": "from.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-schedule": "^1.3.2"
+  }
+}
